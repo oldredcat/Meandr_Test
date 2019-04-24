@@ -1,0 +1,70 @@
+#advantages {
+	background: $_color_promo_bg;
+	
+	.box {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 120px 0 100px 0;
+	}
+	
+	.content {
+		line-height: 0;
+		text-align: center;
+		//padding: 122px 0 0 0;
+	}
+}
+
+.intro {
+	
+	line-height: $_text_line_height;
+	font-size: $_text_font_size;
+	vertical-align: top;
+	text-align: left;
+	//margin-bottom: 60px;
+	display: inline-block;
+	width: 100%;
+	padding-top: 122px;
+	
+	@media (min-width: 576px) {
+		width: 50%;
+	}
+	
+	@media (min-width: 992px) {
+		width: 33%;
+		margin-bottom: 60px;
+	}
+	
+	&-head {
+		color: #000;
+		font-family: 'DIN Pro Regular';
+		font-size: 20px;
+		line-height: normal;
+		position: relative;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -82px;
+			width: 52px;
+			height: 52px;
+			background: url(../images/svg.svg) center no-repeat;
+			background-size: cover;
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -22px;
+			width: 24px;
+			height: 2px;
+			background: $_color_promo;
+		}
+	}
+	
+	&-content {
+		padding: 30px 60px 0 0;
+	}
+
+}

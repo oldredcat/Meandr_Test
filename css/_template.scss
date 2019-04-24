@@ -1,0 +1,60 @@
+html, body {
+	background: #fff;
+	color: $_color_text;
+	font-size: $_text_font_size;
+	line-height: $_text_line_height;
+	font-family: 'Roboto', sans-serif;
+}
+
+.w {
+	padding: 0 10px;
+	max-width: 1420px;
+	margin: 0 auto;
+}
+
+div {
+	position: relative;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 54px;
+	font-family: 'DIN Pro Regular';
+	font-weight: normal;
+	color: $_color_h2;
+	letter-spacing: -0.02em;
+	margin: 0;
+	
+	&.dark {
+		color: $_color_h2_dark;
+	}
+	
+	&.white {
+		color: $_color_h2_white;
+	}
+	
+	&.small {
+		font-size: 40px;
+		line-height: 52px;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+a, img, input, select, button, textarea {
+	outline: none;
+	
+	&:focus, &:active {
+		outline: none;
+	}
+}
